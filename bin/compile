@@ -116,7 +116,7 @@ EOF
 set +e
 
 curl https://nuget.org/nuget.exe -Lfs > $BUILDPACK_DIR/nuget.exe
-mono $BUILDPACK_DIR/nuget.exe update -self -version 3.2.0
+mono $BUILDPACK_DIR/nuget.exe update -self
 NUGET_STATUS=$?
 
 set -e
